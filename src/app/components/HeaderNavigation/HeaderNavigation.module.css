@@ -1,6 +1,13 @@
 .menu {
   display: flex;
-  gap: 28px;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    gap: 28px;
+  }
 }
 
 .menu li {
@@ -14,9 +21,16 @@
 }
 
 .menu li svg {
-  height: 48px;
-  width: 48px;
+  height: 32px;
+  width: 32px;
 
   stroke: var(--foreground);
   fill: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu li svg {
+    height: 48px;
+    width: 48px;
+  }
 }
