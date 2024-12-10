@@ -1,15 +1,14 @@
 .stripe {
   position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 40px;
-  width: 100%;
+  left: 5%;
+  bottom: 12px;
+  width: 90%;
 
-  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
 
-  padding: 16px 40px;
+  padding: 8px 36px;
+  border-radius: 24px;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 16px;
 }

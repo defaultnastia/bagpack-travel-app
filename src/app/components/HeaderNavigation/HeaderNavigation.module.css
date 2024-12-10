@@ -1,5 +1,21 @@
 .menu {
   display: flex;
   gap: 28px;
-  align-items: center;
+}
+
+.menu li {
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: var(--foreground);
+    cursor: pointer;
+  }
+}
+
+.menu li svg {
+  height: 48px;
+  width: 48px;
+  stroke: var(--foreground);
+  fill: none;
 }
