@@ -1,7 +1,20 @@
-import Home from "./components/Home/Home";
+import HomeHeader from "./components/HomeHeader/HomeHeader";
+import HomeHero from "./components/HomeHero/HomeHero";
+import HomeCTA from "./components/HomeCTA/HomeCTA";
+import HomeFooter from "./components/HomeFooter/HomeFooter";
+import Container from "./components/Container";
 
-const HomePage = () => {
-  return <div></div>;
+const page = () => {
+  return (
+    <div className="homepage">
+      <Container>
+        <HomeHeader />
+        <HomeHero />
+        <HomeCTA />
+        <HomeFooter />
+      </Container>
+    </div>
+  );
 };
 
-export default HomePage;
+export default page;

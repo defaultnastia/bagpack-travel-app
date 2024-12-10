@@ -1,4 +1,5 @@
 import React from "react";
+
 import css from "./HomeCTA.module.css";
 import Button from "../Button/Button";
 
@@ -16,6 +17,7 @@ const HomeCTA = () => {
           <Button href="#outlined-buttons">Get Inspo</Button>
         </li>
       </ul>
+
       <p className={css.motto}>
         Backpack is designed to help you track every aspect of the trip in one
         place. Input flight details, accommodations, activities, collaborate

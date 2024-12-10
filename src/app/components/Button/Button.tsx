@@ -1,7 +1,8 @@
-import React from "react";
-import css from "./Button.module.css";
 import clsx from "clsx";
+import React from "react";
 import Link from "next/link";
+
+import css from "./Button.module.css";
 
 type Props = {
   variant?: "regular" | "CTA" | "formSubmit" | "formCancel";

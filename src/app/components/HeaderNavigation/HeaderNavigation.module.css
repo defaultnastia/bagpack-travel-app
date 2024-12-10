@@ -16,6 +16,7 @@
 .menu li svg {
   height: 48px;
   width: 48px;
+
   stroke: var(--foreground);
   fill: none;
 }

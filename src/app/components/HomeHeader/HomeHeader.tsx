@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import HeaderNavigation from "../HeaderNavigation/HeaderNavigation";
 import css from "./HomeHeader.module.css";
 
