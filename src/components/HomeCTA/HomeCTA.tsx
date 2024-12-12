@@ -8,13 +8,13 @@ const HomeCTA = () => {
     <div className={css.box}>
       <ul className={css.buttonsList}>
         <li>
-          <Button href="#outlined-buttons">Sign In</Button>
+          <Button href="/sign-in">Sign In</Button>
         </li>
         <li>
-          <Button href="#outlined-buttons">Sign Up</Button>
+          <Button href="/sign-up">Sign Up</Button>
         </li>
         <li>
-          <Button href="#outlined-buttons">Get Inspo</Button>
+          <Button href="/inspiration">Get Inspo</Button>
         </li>
       </ul>
 

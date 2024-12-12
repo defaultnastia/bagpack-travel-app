@@ -5,7 +5,7 @@ import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import "./globals.css";
 
 const montserrat = localFont({
-  src: "./fonts/Montserrat-VariableFont_wght.ttf",
+  src: "../fonts/Montserrat-VariableFont_wght.ttf",
 });
 
 export const metadata: Metadata = {
