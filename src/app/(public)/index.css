@@ -1,7 +1,11 @@
 .homepage {
   min-height: 100vh;
 
-  background-image: linear-gradient(to bottom, #072e71dc, #61718c63 40%),
+  background-image: linear-gradient(
+      to bottom,
+      var(--colored-glass),
+      var(--faded-glass) 60%
+    ),
     url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;

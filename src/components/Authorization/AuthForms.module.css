@@ -1,0 +1,30 @@
+.form {
+  padding: 40px;
+  width: 90vw;
+  min-width: 360px;
+
+  border-radius: var(--rounded);
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  backdrop-filter: blur(var(--blur-glass));
+  background-color: var(--glass);
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    padding: 80px;
+    width: 60vw;
+    max-width: 560px;
+
+    gap: 40px;
+  }
+}

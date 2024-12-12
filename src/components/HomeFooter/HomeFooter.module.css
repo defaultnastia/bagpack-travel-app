@@ -3,12 +3,13 @@
   left: 5%;
   bottom: 12px;
   width: 90%;
+  min-width: 360px;
 
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  background-color: var(--glass);
+  backdrop-filter: blur(var(--blur-glass));
 
   padding: 8px 36px;
-  border-radius: 24px;
+  border-radius: var(--rounded);
 
   font-size: 16px;
 }

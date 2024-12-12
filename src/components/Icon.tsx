@@ -3,12 +3,18 @@ import React from "react";
 interface IconProps {
   name: string;
   className?: string;
-  size?: number;
+  width?: number;
+  height?: number;
 }
 
-const Icon = ({ name, size = 40, className = "" }: IconProps) => {
+const Icon = ({
+  name,
+  width = 40,
+  height = width,
+  className = "",
+}: IconProps) => {
   return (
-    <svg width={size} height="auto" className={className}>
+    <svg width={width} height={height} className={className}>
       <use xlinkHref={`/images/icons.svg#${name}`} />
     </svg>
   );
