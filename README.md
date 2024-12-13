@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Roadmap
 
-## Getting Started
+## v1
 
-First, run the development server:
+- Make UI as on mockups: register, create trip, edit trip, create combined PDF,
+  share trip, add app review.
+- Make infrastructure/BE: DB, User basic CRUD, Trip basic CRUD.
+- Possible integrations: Google Maps API, OpenWeather API, flight tracking APIs
+  like Skyscanner or FlightAware, Movies API, Rates API, etc.
+- Stack: TS, React + Next.js, Redux, Node.js + Express, MongoDB + Mongoose.
+- Stretch goal: multi-language (UA/EN/ES).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## v2
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Update infrastructure/BE: Trip default lists CRUD, Admin access.
+- Make UI to be able to create own templates for the lists and share them.
+- Make Admin access to edit inspo, users, etc.
+- Add sorting to the trips lists: own + inspo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## v3
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Update infrastructure/BE: User advanced CRUD.
+- Make UI to be able to view and update user’s profile.
+- Possible integrations: Google Auth
+- Update infrastructure/BE: Trip CRUD.
+- Make UI to be able to collaborate on the trip and add travelers.
+- Investigate and add activities API or widget, add sendgrid.
+- Display app reviews.

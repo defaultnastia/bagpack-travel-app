@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Form, Formik, Field, ErrorMessage } from "formik";
+import { Form, Formik, Field, ErrorMessage, FormikHelpers } from "formik";
 import { EMAIL_REGEX, PASSWORD_REGEX } from "@/constants";
 import * as yup from "yup";
 import { Button, IconButton, InputAdornment, TextField } from "@mui/material";
@@ -9,6 +9,11 @@ import css from "./AuthForms.module.css";
 import Icon from "../Icon";
 
 const SignInForm = () => {
+  interface SignInFormValues {
+    email: string;
+    password: string;
+  }
+
   const SignInSchema = yup.object({
     email: yup
       .string()
@@ -43,16 +48,19 @@ const SignInForm = () => {
     event.preventDefault();
   };
 
-  const handleSubmit = (values, props) => {
-    console.log(values);
-    alert(JSON.stringify(values));
-
-    props.resetForm();
-  };
-
   const initialValues = {
     email: "",
     password: "",
+  };
+
+  const handleSubmit = (
+    values: SignInFormValues,
+    actions: FormikHelpers<typeof initialValues>
+  ) => {
+    console.log(values);
+    alert(JSON.stringify(values));
+
+    actions.resetForm();
   };
 
   return (
