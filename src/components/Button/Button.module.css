@@ -2,8 +2,8 @@
   display: block;
 
   padding: 8px 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+  background-color: var(--faded-glass);
+  backdrop-filter: blur(var(--blur-glass));
 
   text-transform: uppercase;
 

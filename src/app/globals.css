@@ -8,7 +8,7 @@
   --button: linear-gradient(90deg, transparent 0%, rgba(10, 70, 104) 60%);
   --glass: rgba(255, 255, 255, 0.1);
   --colored-glass: rgba(4, 53, 82, 0.9);
-  --faded-glass: rgba(151, 166, 174, 0.2);
+  --faded-glass: rgba(133, 147, 154, 0.2);
 
   --rounded: 16px;
   --blur-glass: 8px;
