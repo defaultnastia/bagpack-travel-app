@@ -1,0 +1,14 @@
+.stripe {
+  position: fixed;
+  left: 5%;
+  bottom: 12px;
+  width: 90%;
+  min-width: 360px;
+
+  backdrop-filter: blur(var(--blur-glass));
+
+  padding: 8px 36px;
+  border-radius: var(--rounded);
+
+  font-size: 16px;
+}

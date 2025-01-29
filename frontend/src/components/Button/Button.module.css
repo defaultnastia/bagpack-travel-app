@@ -1,0 +1,18 @@
+.common {
+  display: block;
+
+  padding: 8px 24px;
+  backdrop-filter: blur(var(--blur-glass));
+
+  text-transform: capitalize;
+  text-align: center;
+
+  border: 1px solid;
+  border-radius: var(--rounded);
+
+  &:hover {
+    color: var(--background);
+    background-color: var(--accent);
+    border-color: var(--accent);
+  }
+}

@@ -1,0 +1,29 @@
+.stripe {
+  position: fixed;
+  left: 5%;
+  top: 10px;
+  width: 90%;
+  min-width: 360px;
+
+  backdrop-filter: blur(var(--blur-glass));
+
+  padding: 8px 20px;
+  border-radius: var(--rounded);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stripe .ctaBox {
+  display: flex;
+  gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  .stripe {
+    top: 12px;
+
+    padding: 0 36px;
+  }
+}

@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #fafaf9;
+  --accent: #e3f140;
+
+  --button: linear-gradient(90deg, transparent 0%, rgba(10, 70, 104) 60%);
+
+  --glass: rgba(255, 255, 255, 0.1);
+  --colored-glass: rgba(4, 53, 82, 0.9);
+  --faded-glass: rgba(133, 147, 154, 0.2);
+
+  --rounded: 16px;
+  --blur-glass: 8px;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+* {
+  transition: 0.2s ease-out;
+  transition-property: border-color, color, background-color;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
