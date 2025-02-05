@@ -32,8 +32,39 @@ const customTheme = createTheme({
             {
               props: { variant: "contained" },
               style: {
-                backgroundColor: "transparent",
-                backgroundImage: "var(--button)",
+                background:
+                  "linear-gradient(90deg, transparent 0%, var(--accent) 60%)",
+                color: "var(--background)",
+                backgroundSize: "200% 100%",
+                transition: "0.4s ease-out",
+                transitionProperty: "background-position, color",
+                backgroundPosition: "99% 0",
+                ":hover": {
+                  backgroundPosition: "10% 0",
+                  color: "var(--foreground)",
+                },
+                ":not(:hover)": {
+                  transition: "background-position 0.4s ease-in",
+                  transitionProperty: "background-position, color",
+                },
+              },
+            },
+            {
+              props: { variant: "text" },
+              style: {
+                background: "transparent",
+                color: "var(--foreground)",
+                transition: "0.4s ease-out",
+                transitionProperty: "color",
+                textTransform: "capitalize",
+                width: "fit-content",
+                ":hover": {
+                  color: "var(--accent)",
+                },
+                ":not(:hover)": {
+                  transition: "background-position 0.4s ease-in",
+                  transitionProperty: "color",
+                },
               },
             },
           ],
